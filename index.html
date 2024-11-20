@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>javaScript</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
+      <div class="container px-5">
+        <a class="navbar-brand d-flex gap-2" href="#">
+          <img src="images/logo@2x.png" alt="logo" width="62px" height="36px">
+          <span>
+            <p class="fs-6 fw-bolder m-0">Weather</p>
+            <p class="small-text m-0">tagline goes here</p>
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item m-4 ">
+              <a class="nav-link text-white active" href="#">Home</a>
+            </li>
+            <li class="nav-item m-4">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item m-4">
+              <a class="nav-link text-white" href="#">Live</a>
+            </li>
+            <li class="nav-item m-4">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+
+            <li class="nav-item m-4">
+              <a class="nav-link text-white" href="contactUs.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="pt-5 pb-4">
+    <div class="container">
+      <div class="input-group">
+        <div class="mb-3 w-100 shadow-none position-relative">
+
+          <input type="search" id="searchForm" class="form-control w-100 border-0 rounded-pill pb-3  " id="exampleFormControlInput1"
+            placeholder="Search your city here">
+          <button type="button"
+            class="btn btn-info border-0 rounded-pill position-absolute top-0 start-0 text-white px-5">Find</button>
+        </div>
+      </div>
+      <div id="weather" class="wbox w-100 my-5 ">
+        <div class="row">
+          <div  class="wcard border-0 rounded-end-5 today  col-md-4 position-relative">
+            <div class="cardhead top-0 border-0 rounded-bottom-0 rounded-end-5 position-absolute start-0 end-0">
+              <div class="d-flex py-1 px-3 justify-content-between text-white-50">
+                <p>Friday</p>
+                <p>6Septemper</p>
+              </div>
+            </div>
+            <div class="cardcontent mt-5 p-3">
+              <p class="text-white-50 ">
+                Cairo
+              </p>
+              <p class="tempr text-white">
+                33.3C
+              </p>
+              <img src="/images/116.webp" alt="cloud" width="90px">
+              <p class="text-info">
+                Partly cloudy
+              </p>
+              <div class="icons d-flex justify-content-between text-white-50 align-baseline">
+                <span class="d-flex gap-2">
+                  <i class="fa-solid fa-umbrella"></i>
+                  <p>
+                    20%
+                  </p>
+                </span>
+                <span class="d-flex gap-2">
+                  <i class="fa-solid fa-wind"></i>
+                  <p>
+                    18km/h
+                  </p>
+                </span>
+                <span class="d-flex gap-2">
+                  <i class="fa-brands fa-nfc-directional"></i>
+                  <p>
+                    East
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="wcard yesterday  col-md-4 position-relative">
+            <div class="cardhead top-0  position-absolute start-0 end-0">
+              <div class="text-center py-1 px-3  text-white-50">
+                <p>yesterday</p>
+
+              </div>
+            </div>
+            <div class="cardcontent text-center mt-5 p-5">
+              <img src="/images/302.webp" alt="cloud" class="mt-4 mb-3" width="48px">
+              <p class="text-white fw-bold fs-2">
+                27.5c
+              </p>
+              <p class="text-white-50">
+                16.5C
+              </p>
+              <p class="text-info">
+                Modarate rain
+              </p>
+            </div>
+          </div>
+          <div class="wcard daybefore border-0 rounded-start-5 col-md-4 position-relative">
+            <div class="cardhead top-0  position-absolute start-0 end-0 rounded-top-5 rounded-end-0">
+              <div class="text-center py-1 px-3  text-white-50">
+                <p>daybefor</p>
+
+              </div>
+            </div>
+            <div class="cardcontent text-center mt-5 p-5">
+              <img src="/images/302.webp" alt="cloud" class="mt-4 mb-3" width="48px">
+              <p class="text-white fw-bold fs-2">
+                27.5c
+              </p>
+              <p class="text-white-50">
+                16.5C
+              </p>
+              <p class="text-info">
+                Modarate rain
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="input-group">
+            <div class="mb-3 w-100 shadow-none position-relative">
+
+              <input type="email" class="form-control w-100 border-0 rounded-pill pb-3  " id="exampleFormControlInput1"
+                placeholder="Enter your Email here">
+              <button type="button"
+                class="btn btn-info border-0 rounded-pill position-absolute top-0 start-0 text-white px-3">Subscribe</button>
+            </div>
+          </div>
+          <p class="lead text-white-50">
+            Copyright 2014 Company name. Designed by Themezy. All rights reserved
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="brands text-info text-center">
+            <i class="fa-brands fa-facebook-f mx-2 "></i>
+            <i class="fa-brands fa-pinterest-p mx-2"></i>
+            <i class="fa-brands fa-x-twitter mx-2"></i>
+            <i class="fa-brands fa-google-plus-g mx-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

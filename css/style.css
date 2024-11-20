@@ -1,0 +1,132 @@
+header
+{
+    background-color: #1e202b;
+    
+}
+.small-text
+{
+    font-size: 10px;
+    margin: 0;
+}
+.active 
+{
+    border: 2px solid #09d;
+    border-radius: 25%;
+}
+.active a
+{
+    color: #09d !important;
+}
+.nav-item:hover a
+{
+    color: #09d !important;
+    border: 2px solid #09d;
+    border-radius: 25%;
+}
+main
+{
+    background-image: url("../images/banner.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-color: #1e202b;
+    
+}
+input::placeholder {
+    color: #999 !important; /* Replace with your desired color */
+    opacity: 1 !important;
+}
+input {
+    color: #fff !important; /* Replace with your desired color */
+    opacity: 1 !important;
+}
+.form-control
+{
+    background-color: #1e202b !important;
+    box-shadow: none !important;
+}
+.btn
+{
+    border: #1e202b solid  4px !important;
+}
+.today
+{
+background-color: #323544;
+
+}
+.yesterday{
+background-color: #1e202b;
+
+
+}
+.daybefore
+{
+background-color: #323544;
+}
+.today .cardhead
+{
+    background-color: #2d303d;
+
+    
+}
+.yesterday .cardhead
+{
+    background-color: #222530;
+   
+
+}
+.daybefore .cardhead
+{
+    background-color: #2d303d;
+
+}
+.tempr
+{
+    font-size: 5.625rem;
+    font-weight: 700;
+}
+footer
+{
+    background-color: #262936;
+}
+.brands{
+    font-size: 20px;
+}
+.brands i{
+    cursor: pointer;
+    background-color: #1e202b;
+    border: #1e202b solid 8px;
+    border-radius: 50%;
+}
+.brands i:hover
+{
+color: #fff!important;
+background-color: #09d !important;
+border-color: #09d;
+
+}
+textarea{
+    background-color: #262936 !important;
+    color: white !important;
+}
+
+textarea::placeholder{
+    color: white !important;
+}
+#Body{
+    background-color: #1e202b;
+}
+.breadcrumbSty{
+    background-color: #262936 ;
+}
+.mapBack{
+    background-color: #262936 ;
+}
+
+.mapSize{
+    height:20rem;
+}
+
+.fontSty{
+    font-size: 14px;
+}
